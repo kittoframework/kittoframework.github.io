@@ -5,29 +5,167 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Kitto - The fast, reliable dashboard framework.</title>
   <meta name="description" content="">
-
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div role="main" id="container">
-    <section id="heading" class="clearfix">
-      <div id="heading">
-        <h1>Kitto</h1>
-        <h2>The fast, reliable dashboard framework.</h2>
+  <nav class="top-menu">
+    <div class="container cf">
+      <a href="/" class="logo">
+        <svg width="89px" height="46px" viewBox="384 234 89 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <path d="M25.095493,23.1375736 C25.095493,23.1375736 21.5856338,36.4454591 15.0171831,36.4454591 C11.4571831,36.4454591 11.5073239,31.2029588 11.5073239,30.8500982 C18.0757746,24.9522853 19.0284507,16.3828136 13.5630986,16.3828136 C10.6549296,16.3828136 9.00028169,20.9195927 8.04760563,25.4059632 C8.19802817,18.9536551 8.74957746,11.1403132 9.10056338,6.65394274 C9.70225352,-1.61307703 1.17830986,0.302451943 1.17830986,0.302451943 C2.43183099,4.83923109 -3.83577465,40.2765171 4.08647887,40.0748824 C7.29549296,40.1756997 9.00028169,37.6048582 9.95295775,34.3787042 C9.95295775,34.3787042 11.3067606,38.3105794 14.716338,38.1089448 C22.488169,38.1089448 25.9478873,23.5912515 25.9478873,23.5912515 L25.095493,23.1375736 Z M13.5129577,20.7683667 C15.368169,20.7179581 13.9140845,24.549016 11.2064789,28.228848 C11.7580282,24.2465641 12.0588732,20.7683667 13.5129577,20.7683667 Z M25.6971831,17.794256 C27.7529577,17.794256 29.4577465,16.0803616 29.4577465,14.0136067 C29.4577465,11.8964431 27.7529577,10.2329574 25.6971831,10.2329574 C23.6414085,10.2329574 21.9366197,11.8964431 21.9366197,14.0136067 C21.9366197,16.0803616 23.6414085,17.794256 25.6971831,17.794256 Z M38.1321127,24.1961554 C38.1321127,24.1961554 34.5721127,32.0094973 31.0121127,34.5299301 C27.5523944,36.9495457 27.4019718,32.8664445 28.5050704,25.2043286 C29.3574648,19.3065157 21.7861972,20.7179581 21.7861972,20.7179581 C22.3878873,22.8351217 17.4740845,39.2683439 25.4464789,39.5707959 C34.0205634,39.8732478 38.984507,25.8092325 39.5861972,24.7506507 L38.1321127,24.1961554 Z M68.2667606,24.4481987 C68.2667606,24.4481987 64.255493,35.8909639 60.7456338,38.8650747 C56.8847887,42.1416374 56.9349296,35.0844254 56.8847887,26.2125017 C56.9349296,23.2383909 57.0352113,20.2138715 57.1856338,17.4413954 C57.1856338,17.2397607 57.1856338,16.7860828 57.2357746,16.3324049 L57.4864789,16.3324049 L59.5923944,16.029953 C60.1940845,15.9795443 60.695493,15.878727 61.1467606,15.8283183 C61.5980282,15.7779097 61.9490141,15.727501 62.1495775,15.6770924 C62.4002817,15.6266837 62.5507042,15.6266837 62.5507042,15.6266837 L62.4002817,14.0136067 L62.0492958,14.0136067 C61.7985915,14.0136067 61.4476056,14.0136067 60.996338,14.0640153 C60.5450704,14.0640153 60.043662,14.0640153 59.391831,14.114424 C58.7901408,14.114424 58.088169,14.1648327 57.3360563,14.1648327 C57.3861972,12.8542076 57.4864789,11.6443998 57.5366197,10.6866353 C58.1884507,2.36920689 49.664507,4.28473586 49.664507,4.28473586 C50.015493,5.59536094 49.8149296,9.62805351 49.5140845,14.6689192 L49.2132394,14.6689192 C48.2605634,14.7697365 47.2076056,14.8201452 46.2047887,14.9209625 L44.7005634,15.0721885 C44.3997183,15.0721885 44.0988732,15.1225971 43.7980282,15.1225971 L43.7980282,14.7697365 C43.7980282,14.3160586 43.8983099,12.4509383 43.8983099,12.4509383 C43.9985915,10.737044 44.0988732,9.22478426 44.1991549,7.96456783 C44.8509859,-0.302451943 36.2769014,1.61307703 36.2769014,1.61307703 C36.6780282,3.02451943 36.3771831,7.51088991 36.076338,13.1062509 C36.0261972,13.8119721 35.9259155,15.1225971 35.9259155,15.4250491 L35.9259155,15.9795443 C35.6250704,15.9795443 35.3743662,16.029953 35.123662,16.029953 L33.0678873,16.3324049 C32.4661972,16.3828136 31.9146479,16.4836309 31.5135211,16.5340395 L30.4605634,16.6852655 C30.26,16.7356742 30.1095775,16.7356742 30.1095775,16.7356742 L30.26,18.3487512 L30.6109859,18.3487512 C30.8616901,18.3487512 31.2126761,18.3487512 31.6639437,18.2983425 C32.1152113,18.2983425 32.6166197,18.2983425 33.2684507,18.2479339 C33.8701408,18.2479339 34.5721127,18.1975252 35.3242254,18.1975252 C35.4746479,18.1471166 35.6250704,18.1471166 35.775493,18.1471166 C35.2239437,29.6402904 35.0735211,42.7465413 39.6864789,42.9481759 C43.3467606,43.2506278 46.6059155,40.8310123 49.1630986,37.7560842 C49.664507,42.343272 50.7676056,45.5190174 53.0239437,45.6198347 C63.8543662,45.6198347 69.3698592,25.2547372 69.3698592,25.2547372 L68.2667606,24.4481987 Z M49.3135211,18.0967079 C48.9625352,23.6920689 48.711831,29.9427423 48.9625352,35.0340167 C48.2605634,35.9917812 47.6087324,36.7479111 46.9569014,37.3024063 C43.0459155,40.5285603 43.5473239,32.4127665 43.5473239,23.5408429 C43.5473239,21.5749053 43.5974648,19.558559 43.6977465,17.64303 C44.0988732,17.64303 44.5,17.5926213 44.9011268,17.5422127 C45.4025352,17.491804 45.9039437,17.491804 46.455493,17.4413954 C47.408169,17.3405781 48.3608451,17.2901694 49.363662,17.1893521 C49.3135211,17.5926213 49.3135211,17.9958906 49.3135211,18.0967079 Z M88.2228169,22.784713 C88.2228169,22.784713 87.9219718,22.935939 87.4707042,23.1879823 L87.0194366,23.3392083 C86.9191549,23.4400256 86.7185915,23.4904342 86.568169,23.5912515 C86.4177465,23.6416602 86.2171831,23.7424775 86.0166197,23.8432948 C85.8160563,23.8937035 85.615493,23.9945208 85.4149296,24.0953381 C85.2143662,24.1961554 84.963662,24.2969727 84.7630986,24.3473814 L84.0109859,24.6498333 C83.9107042,24.700242 83.7602817,24.7506507 83.66,24.8010593 L83.4594366,24.851468 C83.4092958,24.9018766 83.3591549,24.9018766 83.2588732,24.9522853 C83.1585915,24.9522853 83.008169,25.0026939 82.8577465,25.0531026 L82.4566197,25.2043286 C81.9552113,25.3555545 81.3535211,25.5571892 80.8019718,25.6580065 C80.2504225,25.8092325 79.6487324,25.9100498 79.0971831,26.0108671 L78.9467606,26.0108671 C78.6960563,22.5830784 76.8909859,19.6593763 74.0830986,18.7520205 C70.0216901,17.491804 65.4087324,20.6675494 63.7540845,25.9100498 C62.0994366,31.2029588 64.0047887,36.4958678 68.0661972,37.7560842 C72.1276056,39.0667093 76.7405634,35.8405552 78.3952113,30.5980549 C78.5957746,29.993151 78.7461972,29.3882471 78.8464789,28.7833432 C79.0971831,28.7329346 79.3478873,28.6321173 79.6487324,28.5817086 C80.3005634,28.380074 80.9022535,28.1784393 81.5039437,27.9263961 L83.2588732,27.1702662 C83.4092958,27.0694489 83.5095775,27.0190402 83.66,26.9686316 C83.8104225,26.8678143 83.9107042,26.8174056 84.0611268,26.7669969 C84.1112676,26.7165883 84.2115493,26.7165883 84.2616901,26.6661796 C84.311831,26.615771 84.3619718,26.615771 84.4622535,26.5653623 L84.8132394,26.3637277 C85.0639437,26.2125017 85.3146479,26.1116844 85.5152113,25.9604584 C85.7157746,25.8092325 85.9664789,25.7084151 86.1670423,25.6075978 L86.7687324,25.2043286 C86.9191549,25.1035113 87.1197183,25.0026939 87.2701408,24.9018766 L87.7214085,24.5994247 C87.871831,24.4986074 88.0222535,24.4481987 88.1225352,24.3473814 C88.5738028,24.0449295 88.824507,23.8432948 88.824507,23.8432948 L88.2228169,22.784713 Z M75.5873239,23.8432948 C76.3895775,24.0953381 76.8909859,24.9522853 77.0915493,26.1116844 C76.6904225,26.1116844 76.2892958,26.0612757 75.888169,25.9604584 C75.6374648,25.9604584 75.4369014,25.8596411 75.236338,25.8092325 C75.0357746,25.7588238 74.8352113,25.6580065 74.6847887,25.5571892 C74.3338028,25.4059632 74.0830986,25.2043286 73.8323944,24.9522853 C73.6819718,24.8010593 73.5315493,24.6498333 73.4312676,24.4481987 C74.1833803,23.8937035 74.935493,23.6416602 75.5873239,23.8432948 Z M71.8769014,35.5381033 C70.2723944,35.0340167 69.7709859,31.9590886 70.7738028,28.7329346 C70.9242254,28.3296653 71.0746479,27.8759874 71.2752113,27.4727181 C71.375493,27.5735355 71.5259155,27.6743528 71.676338,27.7751701 C72.1777465,28.1280307 72.7794366,28.4808913 73.4312676,28.6825259 C73.7822535,28.7833432 74.1332394,28.8841605 74.4842254,28.9345692 C74.8352113,29.0353865 75.1861972,29.0353865 75.5371831,29.0857952 C76.0385915,29.1362038 76.5901408,29.0857952 77.0915493,29.0353865 C76.9912676,29.5898817 76.8909859,30.0939683 76.6904225,30.6484635 C75.6876056,33.8746176 73.5315493,36.0421899 71.8769014,35.5381033 Z" id="path-1"></path>
+          </defs>
+          <g id="Oval-+-Oval-+-Oval-+-Oval-Mask" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(384.000000, 234.000000)">
+            <g id="Group">
+              <g id="Oval">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#2C3E51" xlink:href="#path-1"></use>
+                <ellipse fill="#28A69F" mask="url(#mask-2)" cx="23.0647887" cy="9.82968814" rx="34.3464789" ry="20.6675494"></ellipse>
+                <ellipse fill="#40BBB4" mask="url(#mask-2)" cx="23.0647887" cy="7.30925529" rx="34.3464789" ry="20.6675494"></ellipse>
+                <ellipse fill="#009AAE" mask="url(#mask-2)" cx="55.4056338" cy="51.164787" rx="34.3464789" ry="20.6675494"></ellipse>
+                <ellipse fill="#00B0C7" mask="url(#mask-2)" cx="60.4197183" cy="53.9372631" rx="34.3464789" ry="20.6675494"></ellipse>
+                <polygon id="Rectangle-5" fill="#2C3E51" mask="url(#mask-2)" points="-10.7802817 -6.55312543 16.8946248 0.873290603 -2.11923415 22.7572442 -10.7802817 18.1471166"></polygon>
+                <polygon id="Rectangle-5" fill="#2C3E51" mask="url(#mask-2)" points="49.1380282 39.3187526 76.8129346 46.7451686 57.7990757 68.6291222 49.1380282 64.0189946"></polygon>
+              </g>
+              <polygon id="Rectangle-4" fill="#40BBB4" points="25.0778898 22.6394682 26.0837671 23.5806923 24.6467471 28.0145866 23.1889167 28.0145866"></polygon>
+              <path d="M39.2439027,21.4236793 L40.2497799,22.3649034 C40.2497799,22.3649034 40.0018078,23.823081 39.7771694,24.5329926 C39.5525311,25.2429042 39.2439027,25.5437194 39.2439027,25.5437194 L37.1519669,26.1574903 L39.2439027,21.4236793 Z" id="Rectangle-4" fill="#40BBB4"></path>
+              <polygon id="Rectangle-4" fill="#29A69F" points="23.1880445 27.9895269 24.6796918 27.970036 23.4325668 30.4998374 22.1292078 30.4998374"></polygon>
+              <path d="M37.1501613,26.1608131 L39.2457848,25.5432425 C39.2457848,25.5432425 38.879731,26.764278 38.597816,27.3749098 C38.315901,27.9855417 37.8939345,28.4713689 37.8939345,28.4713689 L35.5150905,29.0691871 L37.1501613,26.1608131 Z" id="Rectangle-4" fill="#29A69F"></path>
+              <path d="M22.1178616,30.4891305 L23.4710508,30.4891305 C23.4710508,30.4891305 22.5245162,32.4767028 21.9428781,33.4123342 C21.3612401,34.3479655 20.9967543,34.4693191 20.9967543,34.4693191 C20.9967543,34.4693191 20.870798,33.9053461 20.8445017,33.5794144 C20.8182054,33.2534826 20.8445017,32.5822097 20.8445017,32.5822097 L22.1178616,30.4891305 Z" id="Rectangle-4" fill="#2C3E51"></path>
+              <path d="M35.5087861,29.068941 L37.9070022,28.4692614 C37.9070022,28.4692614 38.4198588,30.27417 37.8382207,31.2098014 C37.2565826,32.1454327 35.9397605,32.4446658 35.9397605,32.4446658 C35.9397605,32.4446658 34.8858708,32.6532368 34.8595746,32.327305 C34.8332783,32.0013733 34.8595746,31.3301003 34.8595746,31.3301003 L35.5087861,29.068941 Z" id="Rectangle-4" fill="#2C3E51"></path>
+              <polygon id="Rectangle" fill="#2C3E51" points="68.2524503 24.2317836 69.5382276 25.1421792 67.397066 31.7871903 65.2512068 31.3538832"></polygon>
+              <path d="M65.4404897,31.3932342 C65.4404897,31.3932342 66.0238921,31.5102379 66.2404663,31.5545148 C66.3946589,31.5860383 66.7133916,31.6421889 66.8872263,31.6789674 C67.061061,31.7157459 67.0485988,31.7243179 67.0485988,31.7243179 C67.0485988,31.7243179 66.8767257,32.3374147 66.7413698,32.6342982 C66.6060139,32.9311817 66.2137035,33.5555392 66.2137035,33.5555392 L64.4582078,33.4109035 C64.4582078,33.4109035 64.7297058,32.6632797 65.0455816,32.0144508 C65.3614574,31.3656219 65.4404897,31.3932342 65.4404897,31.3932342 Z" id="Rectangle" fill="#009AAE"></path>
+              <path d="M64.4029684,33.404104 C64.4029684,33.404104 65.3978065,33.4825406 65.9095349,33.5267413 C66.4212633,33.5709419 66.2206658,33.561108 66.2206658,33.561108 C66.2206658,33.561108 66.0634588,34.2867512 65.8859396,34.6357071 C65.7084203,34.984663 65.0945625,35.7452575 65.0945625,35.7452575 C65.0945625,35.7452575 64.6315043,35.2535837 64.4586821,34.9791284 C64.2858599,34.7046731 64.0762602,34.1281131 64.0762602,34.1281131 L64.4029684,33.404104 Z" id="Rectangle-2" fill="#00B0C7"></path>
+            </g>
+          </g>
+        </svg>
+      </a>
+      <ul>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#" class="btn">View on Github</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Kitto is a framework to help you create dashboards, written in Elixir / React.</h1>
+    <a href="#" class="btn">Download ZIP</a>
+    <a href="#" class="btn outline">View Demo</a>
+  </header>
+
+  <main>
+    <nav class="section-menu">
+      <ul class="container">
+        <li><a href="#introduction" class="active">Introduction</a></li>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#example-setup">Example Setup</a></li>
+        <li><a href="#api">API</a></li>
+        <li><a href="#license">License</a></li>
+        <li><a href="#issues">Issues</a></li>
+      </ul>
+    </nav>
+
+    <!-- Introduction section -->
+    <section id="introduction" class="container-small cf">
+      <h2>Introduction</h2>
+      <div class="split-content-left">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="split-content-right">
+        <ul>
+          <li>
+            Jobs are supervised processes running concurrently
+          </li>
+          <li>
+            Widgets are coded in the popular React library
+          </li>
+          <li>
+            Uses a modern asset tool-chain, Webpack
+          </li>
+          <li>
+            Allows streaming SSE to numerous clients concurrently with low memory/CPU footprint
+          </li>
+          <li>
+            Easy to deploy using the provided Docker images, or Heroku
+          </li>
+          <li>
+            Can serve assets in production
+          </li>
+          <li>
+            Keeps stats about defined jobs and comes with a dashboard to monitor them
+          </li>
+          <li>
+            Reloads code upon change in development
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section>
-      Documentation and guides <strong>under construction..</strong>
+    <!-- Getting Started section -->
+    <section id="getting-started" class="container-small">
+      <h2>Getting Started</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <pre>
+        mix archive.install https://github.com/kittoframework/archives/raw/master/kitto_new-0.3.1.ez
+      </pre>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <pre>
+        mix archive.install https://github.com/kittoframework/archives/raw/master/kitto_new-0.3.1.ez
+      </pre>
     </section>
 
-    <section class="section-box" id="license">
-      <h3 class="section-title">License</h3>
-      <div class="section-content">
-        <p>Kitto is released under the <a href="https://github.com/kittoframework/kitto/blob/master/LICENSE.txt" target="_blank">MIT license</a></p>
+    <section id="example-setup" class="container-small cf">
+      <h2>Example Setup</h2>
+      <div class="split-content-left">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="split-content-right">
+        <img src="img/dash-card.png" alt="dash card">
       </div>
     </section>
-    <small>Copyright 2016 - Dimitris Zorbas</small>
-  </div>
+
+    <!-- Testimonials section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container-xsmall">
+        <h2>Testimonials</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="avatar">
+          vangeltzo
+        </div>
+        <span>Vangelis Tzortzis</span>
+        <em>Skroutz.gr</em>
+      </div>
+    </section>
+
+    <footer class="container">
+      <p>All right reserved 2016-17</p>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#example-setup">Example Setup</a></li>
+        <li><a href="#api">API</a></li>
+        <li><a href="#license">License</a></li>
+        <li><a href="#issues">Issues</a></li>
+      </ul>
+    </footer>
+  </main>
 </body>
 </html>
